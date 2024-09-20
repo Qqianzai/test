@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.lanqiao.springbootdemo.mapper.UserMapper">
 
-    <select id="query2" resultType="cn.lanqiao.springbootdemo.vo.UserVO" parameterType="cn.lanqiao.springbootdemo.vo.QueryUserVO">
+    <select id="query2" resultType="User" >
         select *from ssy_user
         <where>
             <if test="userName !=null">

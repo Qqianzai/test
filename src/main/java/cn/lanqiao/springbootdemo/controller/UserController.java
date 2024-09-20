@@ -1,5 +1,6 @@
 package cn.lanqiao.springbootdemo.controller;
 
+import cn.lanqiao.springbootdemo.entity.User;
 import cn.lanqiao.springbootdemo.mapper.UserMapper;
 import cn.lanqiao.springbootdemo.util.Result;
 import cn.lanqiao.springbootdemo.vo.QueryUserVO;
@@ -18,8 +19,8 @@ public class UserController {
     return Result.success(userMapper.queryUserList());
     }
     @PostMapping("/bbb")
-    public Result query2(@RequestBody QueryUserVO queryUserVO) {
-        return Result.success(userMapper.query2(queryUserVO));
+    public Result query2(@RequestBody User user) {
+        return Result.success(userMapper.query2(user));
     }
 
 }

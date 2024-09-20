@@ -9,7 +9,7 @@ mybatis:
     configuration:
       map-underscore-to-camel-case: true
     mapper-locations: classpath:mapper/*.xml
-    type-aliases-package: cn.lanqiao.springbootdemo.vo
+    type-aliases-package: cn.lanqiao.springbootdemo.entity
 
 
 

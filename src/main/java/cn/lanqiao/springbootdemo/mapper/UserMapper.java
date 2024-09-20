@@ -15,5 +15,5 @@ public interface UserMapper {
 @Insert(value = "insert into ssy_user( password, user_name) VALUES (#{password},#{userName})")
     void insert(User user);
 
-    List<UserVO> query2(QueryUserVO queryUserVO);
+    List<User> query2(User user);
 }
