@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sxu?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 123456
+
+mybatis:
+    configuration:
+      map-underscore-to-camel-case: true
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: cn.lanqiao.springbootdemo.vo
+
+
+
+logging:
+  level:
+    cn.lanqiao.springbootdemo.mapper: debug
